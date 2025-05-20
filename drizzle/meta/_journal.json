@@ -22,6 +22,20 @@
       "when": 1747751106889,
       "tag": "0002_thankful_silhouette",
       "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "6",
+      "when": 1747761879887,
+      "tag": "0003_dusty_loki",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "6",
+      "when": 1747762055180,
+      "tag": "0004_square_triton",
+      "breakpoints": true
     }
   ]
 }

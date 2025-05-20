@@ -1,0 +1,1 @@
+ALTER TABLE `movies` ADD `timestamp` text DEFAULT (current_timestamp) NOT NULL;

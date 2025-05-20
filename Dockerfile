@@ -18,7 +18,7 @@ EXPOSE 3000
 
 # Опционально: выполнить миграции Drizzle перед запуском
 # Убедитесь, что в package.json есть скрипт для миграций
-CMD ["sh", "-c", "bun run migrate && bun run start"]
+CMD ["sh", "-c", "bun run db:migrate && bun run start"]
 
 # Запускаем приложение
 # CMD ["bun", "run", "start"]
