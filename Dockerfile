@@ -8,7 +8,7 @@ WORKDIR /app
 COPY package.json bun.lock* ./
 
 # Устанавливаем зависимости (для продакшена)
-RUN bun install --production
+RUN bun install
 
 # Копируем остальные файлы проекта
 COPY . .
