@@ -20,7 +20,7 @@ export class MoviesService {
     try {
       const movie = await this.db.insert(moviesTable).values(dto).returning();
 
-      return { movie, error: null };
+      return { movie: movie.shift(), error: null };
     } catch (e) {
       console.error(e);
 
@@ -48,7 +48,7 @@ export class MoviesService {
 
       if (!movie.length) return null;
 
-      return movie;
+      return movie.shift();
     } catch (e) {
       console.error(e);
       throw e;
